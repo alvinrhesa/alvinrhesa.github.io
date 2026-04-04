@@ -38,6 +38,25 @@ body {
   padding: 20px;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
 /* STATS */
 .stats {
   display: flex;
@@ -59,11 +78,14 @@ body {
   padding: 20px;
   border-radius: 12px;
   width: 250px;
-  transition: 0.3s;
+  transition: all 0.6s ease-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+  background: #334155;
 }
 
 /* SERVICES */
@@ -78,6 +100,14 @@ body {
   background: #1e293b;
   padding: 20px;
   border-radius: 10px;
+  transition: all 0.6s ease-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service:hover {
+  background: #334155;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
 }
 
 /* ABOUT */
@@ -90,6 +120,31 @@ body {
 .contact {
   padding: 80px 20px;
   text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.social-btn:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
 }
 
 /* RESPONSIVE */

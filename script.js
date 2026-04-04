@@ -1,3 +1,10 @@
+// initialize elements for reveal animation
+const elementsToReveal = document.querySelectorAll('.card, .service');
+elementsToReveal.forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(30px)';
+});
+
 // smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -8,14 +15,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // reveal on scroll
-const elements = document.querySelectorAll('.card, .service');
-
 window.addEventListener('scroll', () => {
-  elements.forEach(el => {
+  elementsToReveal.forEach(el => {
     const top = el.getBoundingClientRect().top;
     if (top < window.innerHeight - 50) {
-      el.style.opacity = 1;
+      el.style.opacity = '1';
       el.style.transform = 'translateY(0)';
+      el.style.transition = 'all 0.6s ease-out';
     }
   });
 });
