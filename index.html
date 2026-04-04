@@ -52,23 +52,48 @@
 
   <div class="project-grid">
 
-    <div class="card">
-      <h3>Education Platform</h3>
-      <p>Optimized performance & UX for higher engagement</p>
+    <div class="card project-card" data-title="Education Platform" data-description="Optimized performance & UX for higher engagement." data-link="#" data-screenshot="">
+      <div class="project-preview"></div>
+      <div>
+        <h3>Education Platform</h3>
+        <p>Optimized performance & UX for higher engagement.</p>
+      </div>
+      <span class="project-action">View details</span>
     </div>
 
-    <div class="card">
-      <h3>E-Commerce Store</h3>
-      <p>Improved checkout flow & speed</p>
+    <div class="card project-card" data-title="E-Commerce Store" data-description="Improved checkout flow & speed for a modern online store." data-link="#" data-screenshot="">
+      <div class="project-preview"></div>
+      <div>
+        <h3>E-Commerce Store</h3>
+        <p>Improved checkout flow & speed for a modern online store.</p>
+      </div>
+      <span class="project-action">View details</span>
     </div>
 
-    <div class="card">
-      <h3>Landing Page</h3>
-      <p>Designed for conversion & lead generation</p>
+    <div class="card project-card" data-title="Landing Page" data-description="Designed for conversion & lead generation with clean UX." data-link="#" data-screenshot="">
+      <div class="project-preview"></div>
+      <div>
+        <h3>Landing Page</h3>
+        <p>Designed for conversion & lead generation with clean UX.</p>
+      </div>
+      <span class="project-action">View details</span>
     </div>
 
   </div>
 </section>
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Close project preview">×</button>
+    <div class="modal-image" id="modalImage"></div>
+    <div class="modal-copy">
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDescription">Project description will appear here.</p>
+      <a id="modalLink" href="#" target="_blank" class="btn btn-primary">Open project</a>
+    </div>
+  </div>
+</div>
 
 <section id="services" class="services">
   <h2>Services</h2>
