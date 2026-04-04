@@ -406,11 +406,13 @@ section {
 /* PROJECTS */
 .projects {
   background: linear-gradient(180deg, #0a111e 0%, #0f172a 100%);
+  padding: 80px 40px;
 }
 
 .projects h2 {
   margin-bottom: 50px;
   font-size: 36px;
+  text-align: center;
 }
 
 .project-grid {
@@ -418,6 +420,10 @@ section {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .project-card {
@@ -610,12 +616,13 @@ section {
 /* CASE STUDIES */
 .case-studies {
   background: linear-gradient(180deg, #0f172a 0%, #1a2942 100%);
-  padding: 80px 0;
+  padding: 80px 40px;
 }
 
 .case-studies h2 {
   font-size: 36px;
   margin-bottom: 10px;
+  text-align: center;
   background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -629,6 +636,7 @@ section {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .case-study-grid {
@@ -638,6 +646,7 @@ section {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .case-study-card {
@@ -697,17 +706,24 @@ section {
 /* SERVICES */
 .services {
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.08) 0%, rgba(30, 41, 59, 0.14) 100%);
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .services h2 {
   margin-bottom: 40px;
   font-size: 36px;
+  text-align: center;
 }
 
 .service-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .service {
@@ -731,8 +747,14 @@ section {
 /* ABOUT */
 .about {
   background: linear-gradient(180deg, #071020 0%, #0c1731 100%);
-  padding: 80px 0;
+  padding: 80px 40px;
   text-align: center;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 .about p {
@@ -741,6 +763,7 @@ section {
   color: #cbd5e1;
   max-width: 800px;
   margin: 0 auto 50px auto;
+  text-align: center;
 }
 
 .skills-grid {
@@ -750,6 +773,7 @@ section {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .skill-category h3 {
@@ -784,7 +808,7 @@ section {
 
 /* CONTACT */
 .contact {
-  padding: 80px 0;
+  padding: 80px 40px;
   text-align: center;
   background: linear-gradient(180deg, #0f172a 0%, #1a2942 100%);
   border-top: 1px solid rgba(59, 130, 246, 0.2);
@@ -793,6 +817,7 @@ section {
 .contact h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: center;
   background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -803,6 +828,7 @@ section {
   font-size: 18px;
   color: #cbd5e1;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .contact-info {
@@ -814,6 +840,7 @@ section {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 40px;
 }
 
 .contact-item {
