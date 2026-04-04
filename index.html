@@ -4,60 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rhesco | Web Developer</title>
+
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Hi, I'm Rhesa 👋</h1>
-    <p>Web Developer specializing in WordPress & Performance Optimization</p>
-    <a href="#projects" class="btn">View My Work</a>
-  </section>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Rhesco</div>
+  <ul>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I build fast, optimized, and scalable websites using WordPress, Elementor, and modern web practices.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>I build fast & high-converting websites</h1>
+    <p>WordPress Developer focused on performance, UX, and clean design.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2>Selected Work</h2>
 
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>Landing page built with Elementor</p>
-      </div>
+  <div class="project-grid">
 
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>WooCommerce optimization</p>
-      </div>
-
+    <div class="card">
+      <div class="overlay"></div>
+      <h3>Landing Page Optimization</h3>
+      <p>Improved speed & conversion using Elementor</p>
     </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>WordPress</li>
-      <li>Elementor</li>
-      <li>Website Optimization</li>
-      <li>SEO Basics</li>
-    </ul>
-  </section>
+    <div class="card">
+      <div class="overlay"></div>
+      <h3>WooCommerce Revamp</h3>
+      <p>Optimized checkout & UX</p>
+    </div>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </section>
+  </div>
+</section>
 
+<!-- SERVICES -->
+<section id="services" class="services">
+  <h2>What I Do</h2>
+
+  <div class="service-grid">
+    <div class="service">
+      ⚡ Website Speed Optimization
+    </div>
+    <div class="service">
+      🎨 Elementor Custom Design
+    </div>
+    <div class="service">
+      🛒 WooCommerce Setup
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Let's Work Together</h2>
+  <p>Email: your@email.com</p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

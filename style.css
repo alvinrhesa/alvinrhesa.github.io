@@ -5,54 +5,119 @@ body {
   color: #fff;
 }
 
-section {
-  padding: 80px 20px;
-  text-align: center;
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
 }
 
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
 .hero {
-  background: linear-gradient(135deg, #1e293b, #0f172a);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
 }
 
-h1 {
+.hero h1 {
   font-size: 48px;
-  margin-bottom: 10px;
-}
-
-p {
-  opacity: 0.8;
 }
 
 .btn {
-  display: inline-block;
   margin-top: 20px;
+  display: inline-block;
   padding: 12px 24px;
   background: #3b82f6;
-  color: white;
-  text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* PROJECTS */
+.projects {
+  padding: 100px 20px;
+  text-align: center;
 }
 
 .project-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card {
-  background: #1e293b;
+  position: relative;
+  width: 260px;
   padding: 20px;
+  background: #1e293b;
   border-radius: 12px;
-  width: 250px;
+  overflow: hidden;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(59,130,246,0.4));
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* SERVICES */
+.services {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px;
+  text-align: center;
 }
