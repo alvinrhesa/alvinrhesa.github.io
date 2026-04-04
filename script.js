@@ -32,6 +32,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // reveal on scroll
+const heroImage = document.querySelector('.hero-image');
 window.addEventListener('scroll', () => {
   elementsToReveal.forEach(el => {
     const top = el.getBoundingClientRect().top;
@@ -41,6 +42,11 @@ window.addEventListener('scroll', () => {
       el.style.transition = 'all 0.6s ease-out';
     }
   });
+
+  if (heroImage) {
+    const offset = window.scrollY * 0.06;
+    heroImage.style.transform = `translateY(${offset}px)`;
+  }
 });
 
 // project modal
