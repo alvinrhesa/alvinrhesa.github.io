@@ -120,13 +120,13 @@ section {
 
 /* ABOUT */
 .about {
+  padding: 80px 40px;
   text-align: center;
 }
 
 /* CONTACT */
 .contact {
-  padding: 80px 4
-  padding: 80px 20px;
+  padding: 80px 40px;
   text-align: center;
 }
 
@@ -160,7 +160,8 @@ section {
   .nav-links {
     display: none;
   }
-section {
+
+  section {
     padding: 60px 20px;
   }
 
@@ -176,8 +177,7 @@ section {
 
   .about,
   .contact {
-    padding: 60px-direction: column;
-    gap: 20px;
+    padding: 60px 20px;
   }
 
   .hero h1 {
