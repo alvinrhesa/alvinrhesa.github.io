@@ -893,6 +893,7 @@ section {
   .hero-tag {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 90px;
   }
 
   .hero-content h1 {
