@@ -10,20 +10,20 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  padding: 20px 40px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(10px);
 }
 
-.navbar ul {
+.nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
 }
 
-.navbar a {
+.nav-links a {
   color: white;
   text-decoration: none;
 }
@@ -35,45 +35,30 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: radial-gradient(circle at top, #1e293b, #0f172a);
+  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 48px;
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
 }
 
-.btn {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 12px 24px;
-  background: #3b82f6;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* PROJECTS */
-.projects {
-  padding: 100px 20px;
-  text-align: center;
-}
-
+/* PROJECT */
 .project-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  position: relative;
-  width: 260px;
-  padding: 20px;
   background: #1e293b;
+  padding: 20px;
   border-radius: 12px;
-  overflow: hidden;
+  width: 250px;
   transition: 0.3s;
 }
 
@@ -81,43 +66,44 @@ body {
   transform: translateY(-10px);
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent, rgba(59,130,246,0.4));
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.card:hover .overlay {
-  opacity: 1;
-}
-
 /* SERVICES */
-.services {
-  padding: 100px 20px;
-  text-align: center;
-}
-
 .service-grid {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .service {
-  padding: 20px;
   background: #1e293b;
+  padding: 20px;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.service:hover {
-  transform: scale(1.05);
+/* ABOUT */
+.about {
+  padding: 80px 20px;
+  text-align: center;
 }
 
 /* CONTACT */
 .contact {
-  padding: 80px;
+  padding: 80px 20px;
   text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
 }
