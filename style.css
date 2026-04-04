@@ -5,34 +5,27 @@ body {
   color: #fff;
 }
 
-/* NAV */
-.nav {
+/* NAVBAR */
+.navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  display: flex;
-  justify-content: center; /* ⬅️ ini kunci */
-  background: rgba(15,23,42,0.7);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-.nav-inner {
-  width: 100%;
-  max-width: 1100px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 .nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
   color: white;
-}
-
-.cta {
-  color: #3b82f6;
+  text-decoration: none;
 }
 
 /* HERO */
@@ -45,74 +38,36 @@ body {
   padding: 20px;
 }
 
-.hero h1 {
-  font-size: 48px;
-}
-
-.hero span {
-  color: #3b82f6;
-}
-
-.hero-btns {
-  margin-top: 20px;
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.primary {
-  background: #3b82f6;
-}
-
-.ghost {
-  border: 1px solid #3b82f6;
-}
-
 /* STATS */
 .stats {
   display: flex;
-  gap: 40px;
   justify-content: center;
-  margin-top: 40px;
-}
-
-.stats div {
-  text-align: center;
-}
-
-/* SECTION */
-.section {
-  padding: 100px 20px;
-  text-align: center;
+  gap: 40px;
+  padding: 40px;
 }
 
 /* PROJECT */
-.projects {
+.project-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.project {
-  width: 280px;
-  padding: 20px;
+.card {
   background: #1e293b;
+  padding: 20px;
   border-radius: 12px;
+  width: 250px;
   transition: 0.3s;
 }
 
-.project:hover {
+.card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(59,130,246,0.3);
 }
 
 /* SERVICES */
-.services {
+.service-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -125,26 +80,30 @@ body {
   border-radius: 10px;
 }
 
-/* CTA */
-.cta-section {
+/* ABOUT */
+.about {
+  padding: 80px 20px;
   text-align: center;
-  padding: 80px;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
 }
 
-/* ABOUT */
-.about-text {
-  max-width: 600px;
-  margin: auto;
+/* CONTACT */
+.contact {
+  padding: 80px 20px;
+  text-align: center;
 }
 
 /* RESPONSIVE */
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
   .stats {
     flex-direction: column;
+    gap: 20px;
   }
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 }

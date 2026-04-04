@@ -3,124 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rhesa Alvin | Web Developer</title>
+  <title>Rhesco | Web Developer</title>
 
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-inner">
-    <div class="logo">Rhesco</div>
-    <div class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="cta">Hire Me</a>
-    </div>
-  </div>
+<nav class="navbar">
+  <div class="logo">Rhesco</div>
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-inner">
-    <h1>
-      Building fast & high-converting websites
-    </h1>
-
-    <p>
-      I help businesses grow with optimized WordPress websites.
-    </p>
-
-    <a href="#work" class="btn primary">See My Work</a>
-
-    <div class="stats">
-      <div>
-        ⚡ <strong>90+</strong>
-        <span>PageSpeed Score</span>
-      </div>
-      <div>
-        🚀 <strong>10+</strong>
-        <span>Projects Delivered</span>
-      </div>
-      <div>
-        💼 <strong>WordPress</strong>
-        <span>Specialist</span>
-      </div>
-    </div>
+  <div>
+    <h1>Building fast & high-converting websites</h1>
+    <p>I help businesses grow with optimized WordPress websites.</p>
+    <a href="#projects" class="btn">See My Work</a>
   </div>
 </section>
 
-<!-- PROJECT -->
-<section id="work" class="section">
-  <h2>Selected Work</h2>
+<section class="stats">
+  <div>⚡ 90+ PageSpeed Score</div>
+  <div>🚀 10+ Projects Delivered</div>
+  <div>💼 WordPress Specialist</div>
+</section>
 
-  <div class="projects">
+<section id="projects" class="projects">
+  <h2>Selected Projects</h2>
 
-    <div class="project">
-      <div class="project-content">
-        <h3>Education Platform</h3>
-        <p>Optimized performance from 45 → 92 PageSpeed. Improved UX & load time.</p>
-        <span>WordPress • Optimization</span>
-      </div>
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Education Platform</h3>
+      <p>Optimized performance & UX for higher engagement</p>
     </div>
 
-    <div class="project">
-      <div class="project-content">
-        <h3>E-Commerce Store</h3>
-        <p>Revamped checkout flow, reduced cart abandonment.</p>
-        <span>WooCommerce • UX</span>
-      </div>
+    <div class="card">
+      <h3>E-Commerce Store</h3>
+      <p>Improved checkout flow & speed</p>
     </div>
 
-    <div class="project">
-      <div class="project-content">
-        <h3>Landing Page Funnel</h3>
-        <p>Designed high-converting landing page with Elementor.</p>
-        <span>Elementor • Conversion</span>
-      </div>
+    <div class="card">
+      <h3>Landing Page</h3>
+      <p>Designed for conversion & lead generation</p>
     </div>
 
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
+<section id="services" class="services">
   <h2>Services</h2>
 
-  <div class="services">
+  <div class="service-grid">
     <div class="service">⚡ Speed Optimization</div>
-    <div class="service">🎨 Elementor Custom Build</div>
+    <div class="service">🎨 Elementor Design</div>
     <div class="service">🛒 WooCommerce Setup</div>
-    <div class="service">📈 Conversion Optimization</div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="about">
   <h2>About Me</h2>
-  <p class="about-text">
-    I'm a WordPress-focused developer who cares about performance, usability, and real business impact.
-    I don’t just build websites — I build websites that convert.
+  <p>
+    I'm a WordPress-focused web developer with a passion for building fast,
+    scalable, and user-friendly websites. I specialize in Elementor,
+    performance optimization, and conversion-focused design.
   </p>
 </section>
 
-<!-- CTA -->
-<section class="cta-section">
-  <h2>Have a project in mind?</h2>
-  <p>Let’s build something impactful together.</p>
-  <a href="#contact" class="btn primary">Let’s Talk</a>
+<section id="contact" class="contact">
+  <h2>Let's Work Together</h2>
+  <p>Email: your@email.com</p>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: rhesaalvin11@email.com</p>
-</section>
-
+<script src="script.js"></script>
 </body>
 </html>
