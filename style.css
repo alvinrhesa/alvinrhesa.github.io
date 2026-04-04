@@ -214,6 +214,14 @@ section {
   border-radius: 16px;
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.1));
   margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.project-card .project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .project-card .project-action {
