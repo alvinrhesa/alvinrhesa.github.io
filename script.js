@@ -1,5 +1,22 @@
+// hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
+
+// close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+  });
+});
+
 // initialize elements for reveal animation
-const elementsToReveal = document.querySelectorAll('.card, .service');
+const elementsToReveal = document.querySelectorAll('.card, .service, .case-study-card');
 elementsToReveal.forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
