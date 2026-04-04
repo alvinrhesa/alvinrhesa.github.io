@@ -918,6 +918,9 @@ section {
   .nav-links {
     display: none;
   }
+  .case-study-content p {
+    text-align: left;
+  }
 
   .nav-links.active {
     display: flex;
