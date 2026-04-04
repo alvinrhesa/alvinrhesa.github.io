@@ -977,6 +977,10 @@ section {
     padding: 0 20px;
   }
 
+  .case-study-card {
+    text-align: left;
+  }
+
   .service-grid {
     padding: 0 20px;
   }
