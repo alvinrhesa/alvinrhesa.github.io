@@ -62,10 +62,12 @@ projectCards.forEach(card => {
       modalImage.style.backgroundRepeat = 'no-repeat';
       modalImage.style.minHeight = '320px';
       modalImage.style.color = 'transparent';
+      modalImage.classList.add('has-image');
     } else {
       modalImage.style.backgroundImage = '';
       modalImage.style.minHeight = '320px';
       modalImage.style.color = 'rgba(203, 213, 225, 0.7)';
+      modalImage.classList.remove('has-image');
     }
 
     projectModal.classList.add('active');
