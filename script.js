@@ -33,6 +33,7 @@ const modalBackdrop = document.getElementById('modalBackdrop');
 const modalClose = document.getElementById('modalClose');
 const modalTitle = document.getElementById('modalTitle');
 const modalDescription = document.getElementById('modalDescription');
+const modalTech = document.getElementById('modalTech');
 const modalLink = document.getElementById('modalLink');
 const modalImage = document.getElementById('modalImage');
 
@@ -47,6 +48,12 @@ projectCards.forEach(card => {
     modalDescription.textContent = description;
     modalLink.href = link;
     modalLink.textContent = link === '#' ? 'View details' : 'Visit project';
+
+    const techString = card.dataset.tech || '';
+    modalTech.innerHTML = techString
+      .split(',')
+      .map(tag => `<span class="project-badge">${tag.trim()}</span>`)
+      .join('');
 
     if (screenshot) {
       modalImage.style.backgroundImage = `url('${screenshot}')`;
