@@ -5,6 +5,13 @@ body {
   color: #fff;
 }
 
+/* CONTAINER */
+section {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* NAVBAR */
 .navbar {
   position: fixed;
@@ -35,7 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 80px 40px;
 }
 
 .btn {
@@ -62,7 +69,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  padding: 40px;
+  padding: 80px 40px;
+  flex-wrap: wrap;
 }
 
 /* PROJECT */
@@ -112,12 +120,12 @@ body {
 
 /* ABOUT */
 .about {
-  padding: 80px 20px;
   text-align: center;
 }
 
 /* CONTACT */
 .contact {
+  padding: 80px 4
   padding: 80px 20px;
   text-align: center;
 }
@@ -152,9 +160,23 @@ body {
   .nav-links {
     display: none;
   }
+section {
+    padding: 60px 20px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
 
   .stats {
     flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+  }
+
+  .about,
+  .contact {
+    padding: 60px-direction: column;
     gap: 20px;
   }
 
