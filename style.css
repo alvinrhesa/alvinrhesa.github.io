@@ -9,11 +9,20 @@ body {
 .nav {
   position: fixed;
   width: 100%;
-  padding: 20px 40px;
+  top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* ⬅️ ini kunci */
   background: rgba(15,23,42,0.7);
   backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-inner {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-links a {
