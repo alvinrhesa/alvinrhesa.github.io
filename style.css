@@ -124,6 +124,14 @@ section {
   max-width: 420px;
 }
 
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(7, 22, 52, 0.35);
+  object-fit: cover;
+}
+
 .image-placeholder {
   width: 100%;
   max-width: 320px;
