@@ -1044,7 +1044,7 @@ section {
   .hero-tag {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
+    margin-top: 20px;
   }
 
   .hero-content h1 {
@@ -1098,6 +1098,11 @@ section {
     max-width: 100%;
   }
 
+  .case-study-header h3{
+    text-align: left;
+  }
+
+
   .project-card {
     max-width: 100%;
     min-width: auto;
@@ -1143,6 +1148,7 @@ section {
 
   .stats > div {
     padding: 15px 20px;
+    text-align: center;
   }
 
   .about,
