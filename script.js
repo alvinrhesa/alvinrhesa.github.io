@@ -82,9 +82,14 @@ projectCards.forEach(card => {
       modalLink.href = 'javascript:void(0)';
       modalLink.style.cursor = 'default';
       modalLink.style.opacity = '0.6';
+      modalLink.onclick = null;
     } else {
       modalLink.style.cursor = 'pointer';
       modalLink.style.opacity = '1';
+      modalLink.onclick = function(e) {
+        e.preventDefault();
+        window.open(link, '_blank');
+      };
     }
 
     if (screenshot) {
