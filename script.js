@@ -78,6 +78,15 @@ projectCards.forEach(card => {
       .map(tag => `<span class="project-badge">${tag.trim()}</span>`)
       .join('');
 
+    if (link === '#') {
+      modalLink.href = 'javascript:void(0)';
+      modalLink.style.cursor = 'default';
+      modalLink.style.opacity = '0.6';
+    } else {
+      modalLink.style.cursor = 'pointer';
+      modalLink.style.opacity = '1';
+    }
+
     if (screenshot) {
       modalImage.style.backgroundImage = `url('${screenshot}')`;
       modalImage.style.backgroundSize = 'cover';
