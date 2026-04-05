@@ -46,6 +46,14 @@ section {
   flex-shrink: 0;
 }
 
+.logo-subtitle {
+  font-size: 14px;
+  color: #cbd5e1;
+  font-weight: 400;
+  display: block;
+  margin-top: 2px;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -595,6 +603,18 @@ section {
   .modal-card {
     grid-template-columns: 1fr;
   }
+
+  .modal-copy {
+    text-align: center;
+  }
+
+  .modal-tech {
+    justify-content: center;
+  }
+
+  .modal-copy .btn {
+    margin: 0 auto;
+  }
 }
 
 
@@ -1014,6 +1034,11 @@ section {
   .hero-content {
     text-align: center;
     align-items: center;
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
   }
 
   .hero-tag {
