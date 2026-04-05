@@ -440,6 +440,15 @@ section {
   flex: 1 1 280px;
   max-width: 360px;
   min-width: 260px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card .project-preview {
@@ -461,19 +470,21 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 18px;
+  margin: 18px auto 0;
   padding: 10px 16px;
   border-radius: 999px;
   background: rgba(59, 130, 246, 0.12);
   color: #cbd5e1;
   font-size: 14px;
   transition: all 0.3s ease;
+  margin-top: auto;
 }
 
 .project-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
   margin-bottom: 12px;
 }
 
@@ -876,6 +887,33 @@ section {
   color: #3b82f6;
   display: block;
   margin-bottom: 5px;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.25s ease;
+}
+
+.contact-item a:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.contact-item a[href^="mailto:"]::before {
+  content: "✉️";
+}
+
+.contact-item a[href*="wa.me"]::before {
+  content: "💬";
 }
 
 .social-links {
