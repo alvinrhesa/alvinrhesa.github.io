@@ -49,6 +49,21 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Google Analytics event tracking for button clicks
+document.querySelector('.btn-primary').addEventListener('click', function() {
+  gtag('event', 'click', {
+    event_category: 'engagement',
+    event_label: 'get_in_touch_button'
+  });
+});
+
+document.querySelector('.btn-secondary').addEventListener('click', function() {
+  gtag('event', 'click', {
+    event_category: 'engagement',
+    event_label: 'download_cv_button'
+  });
+});
+
 // project modal
 const projectCards = document.querySelectorAll('.project-card');
 const projectModal = document.getElementById('projectModal');
